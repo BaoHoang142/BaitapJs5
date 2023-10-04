@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let phamvi = +prompt("Trò chơi đoán số từ 0 - ");
+    //     let nhapso = +prompt("Nhập vào số muốn đoán");
+    //     let soRamdom
+    //         soRamdom = Math.floor(Math.random()*phamvi)
+    //         console.log(`${soRamdom}`);
+    //             while (soRamdom != nhapso) {
+    //                 if (soRamdom == nhapso) {
+    //                 alert("Bạn đã đoán đung")
+    //                 if (soRamdom > nhapso) {
+    //                     nhapso = +prompt("Nhập vào số lớn hơn");
+    //                 } else {
+    //                     nhapso = +prompt("Nhập vào số nhỏ hơn");
+    //                 }
+    //             }
+    //         }
+    //   // alert("Bạn đoán sai số đúng là "+soRamdom)
+    // //                 nhapso = Number(prompt("Nhập vào số muốn đoán"))
+    // //             }
+    // //             alert("Bạn đoán đúng")
+        let phamvi = +prompt("Nhập khoảng muốn đoán");
+        let random;
+        let count = 1;
+        random = Math.ceil((Math.random() * phamvi)+4); // tạo số ngẫu nhiên từ 1 đến 10
+        console.log(random);
+        let number = +prompt("mời bạn nhập số ");
+        while (count < phamvi) {
+            if(number==random){
+              console.log("bạn đã đoán đúng");
+              break;
+            }else if(number>=1 && number<=10){
+                if(number>random){
+                    number=prompt(`bạn phải nhập số bé hơn ${number}`)
+                    count++
+                }else{
+                    number=prompt(`bạn phải nhập số lớn hơn ${number}`);
+                    count++
+                }
+            }else{
+                number = +prompt("mời bạn nhập lại số ");
+                count++;
+            }
+            // if(count==3){
+            //     console.log("bạn đã hết lượt chơi!");
+            // }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Mời bạn nhập");
+        let n1 = 0;
+        let n2 = 1;
+        let nextTerm;
+        let count=0;
+        console.log(`Fibonaci Series: `);
+        for (let i = 1; i <= a; i++) {
+            console.log(n1);
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+            
+            count +=n1
+        }
+        console.log(`Tổng là ${count}`); 
+        // let F = 0 , F0= 0, F1=0, tong=0
+        // let fibonacci = "";
+        // for (let i=0; i<20;i++){
+        //     if(i==0){
+        //         F=1
+        //         F1=1
+        //         fibonacci += F+ " "
+        //         tong +=F
+        //     }else{
+        //         F= F0+F1
+        //         F0 = F1
+        //         F1 = F
+        //         fibonacci += F+ " "
+        //         tong +=F
+        //         console.log(i +" = "+F)
+        //     }
+        // }
+        // document.write("Dãy Fibonacci là "+fibonacci+"<br>")
+        // document.write("Tổng của các số = "+tong)
+    
+    
+    </script>
+</body>
+</html>
